@@ -24,8 +24,7 @@ DHT dht(pinoDHT, modelo);
 // S2 - Potenciômetro (Oximetro)
 #define oxim 34
 
-// B1 - Chave física de conectividade Wi-Fi (toggle)
-// Ligue a chave: GPIO 22 <-> 3V3, com resistor pull-down 10k para GND
+// B1 - Chave simulando o Wifi
 #define btWifi 22
 
 // Arquivo e política do buffer offline (SPIFFS)
@@ -37,7 +36,7 @@ const size_t MAX_BUFFER_BYTES = 300 * 1024;
 
 // Leitura do wifi (nível direto da chave)
 bool LeituraWifi(int input){
-  return digitalRead(input); // HIGH = ligado/ONLINE, LOW = desligado/OFFLINE
+  return digitalRead(input);
 }
 
 // Realiza leitura do sensor DHT
@@ -143,6 +142,7 @@ void SyncBufferParaNuvem(const char* path) {
   }
 
   Serial.println("=== SINCRONIZACAO: ENVIANDO DADOS ARMAZENADOS ===");
+
   while (f.available()) {
     String linha = f.readStringUntil('\n');
     if (linha.length() > 0) {
@@ -155,7 +155,7 @@ void SyncBufferParaNuvem(const char* path) {
   Serial.println("=== SINCRONIZACAO CONCLUIDA. BUFFER LIMPO. ===");
 }
 
-// Monta registro JSON por linha (JSONL)
+// Monta registro JSON por linha
 String MontaRegistroJSON(float temp, const char* stTemp, float oxi, const char* stOxi) {
   if (isnan(temp)) temp = -99.9;
   if (isnan(oxi))  oxi  = -1.0;
@@ -199,13 +199,15 @@ void setup() {
 //--------------------------------------------------------------------
 // PROGRAMA PRINCIPAL
 //--------------------------------------------------------------------
-bool conectadoAnterior = false; // para detectar transição OFFLINE->ONLINE
+
+// Verifica conexão se existe uma conexão anterior
+bool conectadoAnterior = false;
 
 void loop() {
-  // Leitura direta do estado da chave (toggle físico)
-  bool conectado = LeituraWifi(btWifi); // HIGH=ONLINE, LOW=OFFLINE
+  //Verifica status do wifi
+  bool conectado = LeituraWifi(btWifi);
 
-  // Se acabou de ficar ONLINE, sincroniza o buffer
+  // Sincroniza o buffer quando o equipamento acaba de ficar online
   if (!conectadoAnterior && conectado) {
     SyncBufferParaNuvem(FILE_BUFFER);
   }
