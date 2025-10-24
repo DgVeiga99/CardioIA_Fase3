@@ -111,6 +111,7 @@ size_t FS_FileSize(const char* path) {
   return s;
 }
 
+//Tenta realizar a abertura do arquivo
 bool FS_AppendLine(const char* path, const String& line) {
   File f = SPIFFS.open(path, FILE_APPEND);
   if (!f) f = SPIFFS.open(path, FILE_WRITE);
