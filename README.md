@@ -48,7 +48,8 @@ O sistema adota uma **política de armazenamento limitado (300 KB)**, simulando 
 
 <img width="629" height="390" alt="image" src="https://github.com/user-attachments/assets/d6d79d2d-6d0a-4e46-af22-bee3b40f1a5e" />
 
-🔗 [Simulação Online no Wokwi]([https://wokwi.com/projects/445522787962785793](https://wokwi.com/projects/445522787962785793))
+🔗 [Simulação Online no Wokwi](https://wokwi.com/projects/445704978329638913)
+
 
 ---
 
