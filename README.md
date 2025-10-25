@@ -48,7 +48,7 @@ O sistema adota uma **política de armazenamento limitado (300 KB)**, simulando 
 
 <img width="629" height="390" alt="image" src="https://github.com/user-attachments/assets/d6d79d2d-6d0a-4e46-af22-bee3b40f1a5e" />
 
-🔗 [Simulação Online no Wokwi](https://wokwi.com/projects/445704978329638913)
+🔗 [Simulação Online no Wokwi](https://wokwi.com/projects/445522787962785793)
 
 
 ---
@@ -60,6 +60,12 @@ O sistema adota uma **política de armazenamento limitado (300 KB)**, simulando 
 
 Na segunda etapa, o projeto foi planejado para a **transmissão dos dados coletados pelo ESP32 para a nuvem**, utilizando o **protocolo MQTT** e integração com o **Node-RED**.  
 Essa camada de *Fog/Cloud* tem como objetivo receber as informações enviadas do dispositivo, processá-las e exibi-las em um painel de monitoramento.
+
+📷 **Circuito desenvolvido no Wokwi:**
+
+<img width="629" height="390" alt="image" src="https://github.com/user-attachments/assets/d6d79d2d-6d0a-4e46-af22-bee3b40f1a5e" />
+
+🔗 [Simulação Online no Wokwi](https://wokwi.com/projects/445704978329638913)
 
 ⚠️ **Nota importante:**  
 Por limitações do ambiente de simulação e disponibilidade de tempo, **não foi possível realizar a integração completa com o Node-RED nem a simulação MQTT** conforme previsto na atividade.  
