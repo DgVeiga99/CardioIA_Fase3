@@ -1,4 +1,4 @@
-# 🩺 CardioIA - Fase 3: IoT em Saúde Digital – Edge & Cloud Computing com ESP32
+<img width="629" height="390" alt="image" src="https://github.com/user-attachments/assets/d6d79d2d-6d0a-4e46-af22-bee3b40f1a5e" /># 🩺 CardioIA - Fase 3: IoT em Saúde Digital – Edge & Cloud Computing com ESP32
 
 ## 💡 Ideia do Projeto
 
@@ -46,9 +46,9 @@ O sistema adota uma **política de armazenamento limitado (300 KB)**, simulando 
 
 📷 **Circuito desenvolvido no Wokwi:**
 
-![Circuito Wokwi](docs/56b68abb-63c2-42d5-918b-8cc175e8c49b.png)
+![Circuito Wokwi](<img width="629" height="390" alt="image" src="https://github.com/user-attachments/assets/fda84ac4-f727-4122-9210-b26d3daeefd3" />)
 
-🔗 [Simulação Online no Wokwi](https://wokwi.com/projects/445522787962785793)
+🔗 [Simulação Online no Wokwi]([https://wokwi.com/projects/445522787962785793](https://wokwi.com/projects/445522787962785793))
 
 ---
 
