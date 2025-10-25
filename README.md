@@ -1,4 +1,4 @@
-<img width="629" height="390" alt="image" src="https://github.com/user-attachments/assets/d6d79d2d-6d0a-4e46-af22-bee3b40f1a5e" /># 🩺 CardioIA - Fase 3: IoT em Saúde Digital – Edge & Cloud Computing com ESP32
+# 🩺 CardioIA - Fase 3: IoT em Saúde Digital – Edge & Cloud Computing com ESP32
 
 ## 💡 Ideia do Projeto
 
